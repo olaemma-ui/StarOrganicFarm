@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar h1{
+    font-size: 4vh;
+    color: black;
+}
+.navbar sub{
+    color: white;
+}
+.navbar .nav-link{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.navbar i{
+    color: black;
+}
+.bg{
+    background-color:  rgb(80, 158, 1);
+}
+.nav-link{
+    color: black;
+}
+.text{
+    background-image: url(images/bg.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.content{
+    background-color: rgba(0, 0, 0, 0.768);
+    padding-bottom: 100px;
+}
+.col-md-6{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.col-md-4{
+    margin-top: 20px ;
+}
+.card{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-title{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#btn{
+    background-color: transparent; 
+    color: white; 
+    font-size: 30px; 
+    border-radius: 30px; 
+    margin-top: 10px; 
+    width: 25vh; 
+    height: 70px; 
+    float: right; 
+    border: solid white 1px; 
+    padding: 10px;
+}
+#btn:hover {
+    cursor: pointer;
+    background-color: rgb(80, 158, 1);
+    text-decoration: none;
+}
+#btn2{
+    background-color: transparent; 
+    color: white; 
+    font-size: 20px; 
+    float: right; 
+}
+#cont{
+    position: relative;
+    bottom: 120px;
+    margin-bottom: -50px;
+}
+#h2{
+    font-size: large; 
+    display: inline;
+    font-weight: lighter;
+}
+#mid{
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+#h3{
+    font-size: large;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+input{
+    margin: 10px;
+    height: 60px;
+}
+textarea{
+    margin: 10px;
+}
+form .btn{
+    margin: 10px;
+}
+.text-btn{
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+#border{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    bottom: 17px;
+    right: 10px;
+}
+@media screen and (max-width: 420px){
+    #btn2{
+        font-size: 20px;
+        border-radius: 10px;
+        width: 110%;
+    }
+    #h2{
+        display: none;
+        position: absolute;
+        z-index: -1;
+    }
+    #mid{
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+}
+/* End of Queries */    
