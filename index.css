@@ -2,10 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: black;
+    position: relative;
 }
 .navbar h1{
-    font-size: 4vh;
+    font-size: 3.3vmax;
     color: black;
 }
 .navbar sub{
@@ -26,7 +26,7 @@ body{
     color: black;
 }
 .text{
-    background-image: url(images/bg.JPG);
+    background-image: url(images/farm.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,21 +35,40 @@ body{
 .content{
     background-color: rgba(0, 0, 0, 0.544);
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 .col-md-6{
     padding-bottom: 20px;
     padding-top: 10px;
 }
 .col-md-4{
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 .card{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 100%;
+}
+#border .card img{
+    height: 300px;
+    border-radius: 0px;
+}
+#border .card {
+    border: none;
+    background-color: transparent;
+}
+#border .card-title{
+    font-size: xx-large;
 }
 .card-title{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+#cont .card{
+    height: 330px;
+}
+#cont .card-text{
+    font-size: large;
 }
 #btn{
     background-color: transparent; 
@@ -74,20 +93,10 @@ body{
     font-size: 20px; 
     float: right; 
 }
-#cont{
-    position: relative;
-    bottom: 120px;
-    margin-bottom: -50px;
-}
 #h2{
     font-size: large; 
     display: inline;
     font-weight: lighter;
-}
-#mid{
-    display: none;
-    position: absolute;
-    z-index: -1;
 }
 #h3{
     font-size: large;
@@ -106,19 +115,6 @@ textarea{
 form .btn{
     margin: 10px;
 }
-.text-btn{
-    background-color: chartreuse;
-    font-weight: bolder;
-    font-size: x-large;
-    color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
-    width: 100px;
-    margin-top: 10px;
-    text-align: center;
-}
 #border{
     border-radius: 10px;
     padding: 10px;
@@ -131,6 +127,32 @@ form .btn{
 }
 .contact-bg{
     background-color: rgba(98, 189, 7, 0.748);
+}
+.progress{
+    margin-bottom: 50px;
+}
+.fa-2x small{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.fab {
+    font-size: x-large;
+}
+.text .content .card {
+    background-color: transparent; 
+    border: none;
+}
+.text .content .card-title {
+    color: orange; 
+    font-size: 3.5vmax; 
+    text-shadow: black 2px 2px;
+}
+/* Media Queries */
+@media screen and (min-width: 1020px){
+    .text .content .card {
+        width: 60%;
+        margin-left: 200px;
+    }
 }
 @media screen and (max-width: 1050px){
     .card-title img {
